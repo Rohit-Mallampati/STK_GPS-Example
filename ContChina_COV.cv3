@@ -1,0 +1,8 @@
+VO_V110
+    ShowStatic          Yes
+    StaticPointSize     2.000
+    ShowAnim            Yes
+    AnimPointSize       3.000
+    AutoGranularity     Yes
+    ShowAtAltitude      No
+    DrawAtAltMode       FrontAndBack

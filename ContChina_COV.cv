@@ -1,0 +1,196 @@
+stk.v.11.0
+WrittenBy    STK_v11.0.0
+
+BEGIN CoverageDefinition
+
+Name        ContChina_COV
+
+BEGIN GridDefinition
+
+    VersionIndicator     20080103
+    Begin                CustomRegions
+        AreaTarget    AreaTarget/China
+        CheckForHoles		Yes
+        AllowSmallRegionIsotropicAlgorithm
+    End                  CustomRegions
+    LatResolution        1.000000000000000e+000
+    LonResolution        1.000000000000000e+000
+    UsePolarRegions        Yes
+    GridClass            Target
+    PointLocationMethod  EqualArea
+    CustomPtAltMethod    ValueFromFile
+    CentralBody          Earth
+    GroundAltMethod      UseAltType
+    GroundAlt            0.000000
+    AltitudeMethod       Altitude
+    Begin AltitudeList
+        0.000000
+    End AltitudeList
+
+END GridDefinition
+
+BEGIN AccessDefinition
+
+    DataRetention        AllData
+    Convergence          0.005000
+    AbsValueConvergence  1.000000e-014
+    RelValueConvergence  1.000000e-008
+    MaxTimeStep          360.000000
+    MinTimeStep          1.000000e-002
+    UseLightTimeDelay    No
+    TimeSense            PerAsset
+    DetectEventsUsingSamplesOnly No
+    AutoRecompute        No
+    UseAllAssetAccess        No
+    AssetSatisType           AtLeast
+    AssetSatisThreshold      1
+    AccessSaveMode       SaveWith
+    RegionAccessAccel    Auto
+
+END AccessDefinition
+
+BEGIN AssetList
+
+    Constellation/GPS_Sats   Active 
+    Required No
+    UseConstConstraints No
+    Begin SubAssets
+        Satellite/GPS_BIIF-10_40730   Active
+    Required No
+        Satellite/GPS_BIIF-1_36585   Active
+    Required No
+        Satellite/GPS_BIIF-2_37753   Active
+    Required No
+        Satellite/GPS_BIIF-3_38833   Active
+    Required No
+        Satellite/GPS_BIIF-4_39166   Active
+    Required No
+        Satellite/GPS_BIIF-5_39533   Active
+    Required No
+        Satellite/GPS_BIIF-7_40105   Active
+    Required No
+        Satellite/GPS_BIIF-8_40294   Active
+    Required No
+        Satellite/GPS_BIIF-9_40534   Active
+    Required No
+        Satellite/GPS_BIIR-02_24876   Active
+    Required No
+        Satellite/GPS_BIIR-03_25933   Active
+    Required No
+        Satellite/GPS_BIIR-04_26360   Active
+    Required No
+        Satellite/GPS_BIIR-05_26407   Active
+    Required No
+        Satellite/GPS_BIIR-06_26605   Active
+    Required No
+        Satellite/GPS_BIIR-07_26690   Active
+    Required No
+        Satellite/GPS_BIIR-08_27663   Active
+    Required No
+        Satellite/GPS_BIIR-09_27704   Active
+    Required No
+        Satellite/GPS_BIIR-10_28129   Active
+    Required No
+        Satellite/GPS_BIIR-11_28190   Active
+    Required No
+        Satellite/GPS_BIIR-12_28361   Active
+    Required No
+        Satellite/GPS_BIIR-13_28474   Active
+    Required No
+        Satellite/GPS_BIIRM-1_28874   Active
+    Required No
+        Satellite/GPS_BIIRM-2_29486   Active
+    Required No
+        Satellite/GPS_BIIRM-3_29601   Active
+    Required No
+        Satellite/GPS_BIIRM-4_32260   Active
+    Required No
+        Satellite/GPS_BIIRM-5_32384   Active
+    Required No
+        Satellite/GPS_BIIRM-6_32711   Active
+    Required No
+    End SubAssets
+
+END AssetList
+
+BEGIN Interval
+
+    AccStart             9 May 2020 02:00:00.000000000
+    AccStop              16 May 2020 02:00:00.000000000
+    UseScenarioInterval       No
+    AccIntervalPtr
+	BEGIN	EVENTINTERVAL
+			EventInterval
+				BEGIN	EVENTINTERVAL
+					Type	EVENTINTERVAL_LINKTO
+					Name	AnalysisInterval
+					AbsolutePath	Scenario
+				END	EVENTINTERVAL
+			IntervalState	Implicit
+	END	EVENTINTERVAL
+
+
+END Interval
+
+Begin SavedAccesses
+    FileName: ContChina_COV.cva
+End SavedAccesses
+
+BEGIN Extensions
+    
+    BEGIN Graphics
+
+BEGIN Attributes
+
+    GridMarkerStyle          1
+    GridColor                #ffffff
+    ProgressColor            #00ffff
+    SatisfactionColor        #00ff00
+    GridTranslucency         0.500000
+    SatisfactionTranslucency 0.700000
+
+END Attributes
+
+BEGIN Graphics
+
+    Show                 Yes
+    ShowGrid             No
+    ShowRegions          No
+    ShowRegionsText      No
+    ShowPoints           No
+    FillPoints           No
+    ShowProgress         Yes
+    ShowSatisfaction     No
+
+END Graphics
+    END Graphics
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    Begin ShortText
+
+    End ShortText
+    Begin LongText
+
+    End LongText
+    END Desc
+    
+    BEGIN VO
+    END VO
+
+END Extensions
+
+BEGIN SubObjects
+
+Class FigureOfMerit
+
+	PACC
+
+END Class
+
+END SubObjects
+
+END CoverageDefinition
+

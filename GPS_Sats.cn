@@ -1,0 +1,61 @@
+stk.v.11.0
+WrittenBy    STK_v11.0.0
+
+BEGIN Constellation
+
+Name  GPS_Sats
+BEGIN Definition
+
+   Type        Constellation
+   Operator    NofM
+   Order       8
+   IsRelay     No
+    Object  Satellite/GPS_BIIF-10_40730
+    Object  Satellite/GPS_BIIF-1_36585
+    Object  Satellite/GPS_BIIF-2_37753
+    Object  Satellite/GPS_BIIF-3_38833
+    Object  Satellite/GPS_BIIF-4_39166
+    Object  Satellite/GPS_BIIF-5_39533
+    Object  Satellite/GPS_BIIF-7_40105
+    Object  Satellite/GPS_BIIF-8_40294
+    Object  Satellite/GPS_BIIF-9_40534
+    Object  Satellite/GPS_BIIR-02_24876
+    Object  Satellite/GPS_BIIR-03_25933
+    Object  Satellite/GPS_BIIR-04_26360
+    Object  Satellite/GPS_BIIR-05_26407
+    Object  Satellite/GPS_BIIR-06_26605
+    Object  Satellite/GPS_BIIR-07_26690
+    Object  Satellite/GPS_BIIR-08_27663
+    Object  Satellite/GPS_BIIR-09_27704
+    Object  Satellite/GPS_BIIR-10_28129
+    Object  Satellite/GPS_BIIR-11_28190
+    Object  Satellite/GPS_BIIR-12_28361
+    Object  Satellite/GPS_BIIR-13_28474
+    Object  Satellite/GPS_BIIRM-1_28874
+    Object  Satellite/GPS_BIIRM-2_29486
+    Object  Satellite/GPS_BIIRM-3_29601
+    Object  Satellite/GPS_BIIRM-4_32260
+    Object  Satellite/GPS_BIIRM-5_32384
+    Object  Satellite/GPS_BIIRM-6_32711
+   SaveMode    0
+   UseLoadIntervalFile    No
+
+END Definition
+
+BEGIN Extensions
+    
+    BEGIN ADFFileData
+    END ADFFileData
+    
+    BEGIN Desc
+    Begin ShortText
+
+    End ShortText
+    Begin LongText
+
+    End LongText
+    END Desc
+
+END Extensions
+
+END Constellation

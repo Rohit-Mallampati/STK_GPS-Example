@@ -1,0 +1,14 @@
+VO_V110
+    ShowStaticContours         Yes
+    ShowAnimContours           Yes
+    StaticSize                 2.000000
+    AnimSize                   3.000000
+    InlayDataPixelsPerDegree   3.000000
+    ShowStaticContourLegend    No
+    StaticXPixelLocation       5
+    StaticYPixelLocation       5
+    StaticBckGndTranslucency   0.000000
+    ShowAnimContourLegend      Yes
+    AnimXPixelLocation         5
+    AnimYPixelLocation         5
+    AnimBckGndTranslucency     0.500000
