@@ -1,0 +1,4 @@
+This examples takes GPS constellation into account for calculating PACC (Positional Accuracy) for USA and China.
+
+
+This application is based on STK (Systems Tool Kit)
